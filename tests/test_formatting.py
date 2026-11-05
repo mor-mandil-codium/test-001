@@ -5,7 +5,7 @@ from app.formatting import format_cents
 
 @pytest.mark.parametrize(
     ("cents", "expected"),
-    [(1234, "12.34 USD"), (1205, "12.05 USD"), (5, "0.05 USD"), (-150, "-1.50 USD"), (-1, "-0.01 USD")],
+    [(0, "0.00 USD"), (1234, "12.34 USD"), (1205, "12.05 USD"), (5, "0.05 USD"), (-150, "-1.50 USD"), (-1, "-0.01 USD")],
 )
 def test_format_cents(cents, expected):
     assert format_cents(cents) == expected
