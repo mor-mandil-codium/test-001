@@ -26,3 +26,7 @@ def test_apply_codes_rejects_unknown_code():
 def test_discount_ratio():
     assert discount_ratio(100.0, 75.0) == 0.25
     assert discount_ratio(0.0, 0.0) == 0.0
+
+
+def test_apply_codes_without_codes_returns_amount():
+    assert apply_codes(Order("a", 100.0)) == 100.0
