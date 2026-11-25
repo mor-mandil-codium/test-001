@@ -1,1 +1,2 @@
 PR Activity Timeline QA, 25 Nov 2026. Do not merge.
+Second commit: checks the pushed entry.
